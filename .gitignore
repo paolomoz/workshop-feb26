@@ -1,0 +1,6 @@
+# Tone rewriting cache (auto-generated, rebuild with --rewrite-tone)
+.tone_cache.json
+
+# Environment
+.env
+.DS_Store
