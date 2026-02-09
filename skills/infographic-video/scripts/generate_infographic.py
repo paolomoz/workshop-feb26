@@ -49,7 +49,6 @@ def generate_infographic(prompt: str, output_path: str, aspect_ratio: str = "16:
             response_modalities=["IMAGE"],
             image_config=types.ImageConfig(
                 aspect_ratio=aspect_ratio,
-                image_size="2K",
             ),
         ),
     )

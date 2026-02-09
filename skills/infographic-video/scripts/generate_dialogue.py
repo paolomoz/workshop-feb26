@@ -44,7 +44,8 @@ MODEL_ID = "eleven_v3"
 
 # ── Audio Generation ──────────────────────────────────────────────────────────
 def generate_dialogue_audio(
-    dialogue: list, voices: dict, output_path: Path, api_key: str
+    dialogue: list, voices: dict, output_path: Path, api_key: str,
+    stability=None, speed=None,
 ) -> None:
     """Call ElevenLabs Text-to-Dialogue API for a section's dialogue.
 
@@ -64,6 +65,20 @@ def generate_dialogue_audio(
             "voice_id": voice_id,
         })
 
+    body = {
+        "inputs": inputs,
+        "model_id": MODEL_ID,
+    }
+
+    # Add optional settings
+    settings = {}
+    if stability is not None:
+        settings["stability"] = stability
+    if speed is not None:
+        settings["speed"] = speed
+    if settings:
+        body["settings"] = settings
+
     resp = requests.post(
         DIALOGUE_URL,
         headers={
@@ -71,13 +86,12 @@ def generate_dialogue_audio(
             "Content-Type": "application/json",
             "Accept": "audio/mpeg",
         },
-        json={
-            "inputs": inputs,
-            "model_id": MODEL_ID,
-        },
+        json=body,
         timeout=120,
     )
-    resp.raise_for_status()
+    if resp.status_code != 200:
+        print(f"    ERROR {resp.status_code}: {resp.text[:500]}")
+        resp.raise_for_status()
     output_path.write_bytes(resp.content)
     print(f"    Generated: {output_path.name} ({len(resp.content) / 1024:.1f} KB)")
 
@@ -111,6 +125,8 @@ def main():
     parser.add_argument("dialogue_json", type=Path, help="Path to dialogue.json")
     parser.add_argument("output_dir", type=Path, help="Output directory for audio files")
     parser.add_argument("--voices", type=str, help="Voice mapping: Name=ID,Name=ID")
+    parser.add_argument("--stability", type=float, default=None, help="Voice stability (0.0-1.0, lower = more expressive)")
+    parser.add_argument("--speed", type=float, default=None, help="Speech speed (1.0 = normal, >1.0 = faster)")
     args = parser.parse_args()
 
     # Load .env from the dialogue file's parent directory
@@ -134,6 +150,10 @@ def main():
     print("=" * 60)
     print("  ElevenLabs Text-to-Dialogue Generator")
     print("  Two-host conversation (Alex & Jordan)")
+    if args.stability is not None:
+        print(f"  Stability: {args.stability}")
+    if args.speed is not None:
+        print(f"  Speed: {args.speed}")
     print("=" * 60)
 
     total_duration = 0.0
@@ -147,7 +167,8 @@ def main():
         print(f"  Turns: {len(dialogue)}")
         print(f"  {'─' * 40}")
 
-        generate_dialogue_audio(dialogue, voices, output_path, api_key)
+        generate_dialogue_audio(dialogue, voices, output_path, api_key,
+                               stability=args.stability, speed=args.speed)
 
         duration = get_duration(output_path)
         total_duration += duration
