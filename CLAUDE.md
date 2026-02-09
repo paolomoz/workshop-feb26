@@ -50,3 +50,6 @@ When the user shares raw workshop notes, follow the processing rules in [`one-ae
 
 ### Audio Production: Fireside Chat
 When the user asks to generate a fireside chat or audio dialogue from a document, follow the processing rules in [`one-aem-26/FIRESIDE_CHAT_AUDIO_SKILL.md`](one-aem-26/FIRESIDE_CHAT_AUDIO_SKILL.md). Write a casual conversational script, generate audio via ElevenLabs Text-to-Dialogue API, and merge into a single MP3. Read the skill file at the start of each conversation involving audio generation.
+
+### Video Production: Infographic Video
+When the user asks to generate a video, video recap, or infographic video from an article or meeting summary, follow the processing rules in [`skills/infographic-video/SKILL.md`](skills/infographic-video/SKILL.md). Splits content into sections, generates infographic images, creates two-host podcast-style dialogue audio via ElevenLabs Text-to-Dialogue API, and assembles into MP4 with background music. Read the skill file at the start of each conversation involving video generation.

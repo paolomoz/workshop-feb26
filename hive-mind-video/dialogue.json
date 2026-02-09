@@ -1,0 +1,77 @@
+{
+  "sections": [
+    {
+      "name": "01-intro",
+      "dialogue": [
+        {"speaker": "Steve", "text": "So. Something is happening over at Anthropic. They are a spaceship that is beginning to take off. And I need you to pay attention."},
+        {"speaker": "Steve", "text": "I spent four months talking to nearly forty people there. Cofounders, researchers, engineers, sales, product. Getting them to open up is like breaking into Fort Knox, because they all know if they just keep their heads down, they'll be billionaires. But I managed. People usually figure out I'm harmless within about fourteen seconds."},
+        {"speaker": "Steve", "text": "And here's what I found. The odds of getting hired at Anthropic are roughly comparable to making it into the NFL. Everyone I met is the best of the best of the best, to an even crazier degree than Google at its peak."},
+        {"speaker": "Steve", "text": "I've seen this movie before, a few times. And by talking to enough of them, I have begun to suspect that the future of software development is... the Hive Mind."}
+      ]
+    },
+    {
+      "name": "02-happy-but-sad",
+      "dialogue": [
+        {"speaker": "Steve", "text": "To get a proper picture of Anthropic right now, you have to be Claude Monet. You have to paint it impressionistically, one big broad stroke at a time. And this first stroke is all about the mood."},
+        {"speaker": "Steve", "text": "Almost everyone there is vibrantly happy. It has the same crackle of electricity in the air that Amazon had back in nineteen ninety-eight. Everyone knows something amazing is about to happen that will change society forever."},
+        {"speaker": "Steve", "text": "But here's the part that stopped me cold. Every single person and team I met feels sweetly but sadly transcendent. They have this distinct gravity, like elves watching the old world fade away. I can't quite put my finger on it."},
+        {"speaker": "Steve", "text": "And then I realized: they feel genuinely sorry for a lot of companies. Because we're not taking this stuff seriously enough. Twenty twenty-six is going to be a year that just about breaks a lot of companies, and most don't see it coming. Anthropic is trying to warn everyone. And it's like yelling about an offshore earthquake to villages that haven't seen a tidal wave in a century."}
+      ]
+    },
+    {
+      "name": "03-the-vibe-mind",
+      "dialogue": [
+        {"speaker": "Steve", "text": "Now, every single person you talk to at Anthropic will eventually mention the chaos. This company is not run like any other company of its size. Every other company quickly becomes professional, compartmentalized, accountable, grown up. Anthropic hasn't bothered with any of that."},
+        {"speaker": "Steve", "text": "Sure, for production systems, they're very serious, lots of world-class SREs. But the tail that wags their dog is Claude in its various incarnations, and that's the Work Generator that keeps the hive buzzing along."},
+        {"speaker": "Steve", "text": "The employees describe it as a hive mind that is run entirely on vibes. Not strategy decks. Not OKRs. Not committee reviews. Vibes. And this is clearly being directed by leadership. Organizations reflect their leaders. There are key graph nodes spread through the network, keeping the whole thing stable."},
+        {"speaker": "Steve", "text": "But if you interfere with it? If you upset that balance? The centrifuge gently spins you out to the periphery, carried away by a wave of vibes. It feels fragile. It may have scaling ceilings. But they've kept it going. And I have some thoughts about how."}
+      ]
+    },
+    {
+      "name": "04-how-to-end-a-golden-age",
+      "dialogue": [
+        {"speaker": "Steve", "text": "To understand why Anthropic works, you need to understand Golden Ages. And more importantly, how they die."},
+        {"speaker": "Steve", "text": "A Golden Age is a period of intense innovation and velocity that lasts several years and attracts all the best talent in the industry. I lived through three of them. Amazon in ninety-eight. Google until twenty eleven. Microsoft in the early two thousands with C-sharp and dot-net."},
+        {"speaker": "Steve", "text": "Google's Golden Age ended on a specific date. April twenty eleven. Larry Page became CEO. His motto: More Wood Behind Fewer Arrows. He cut funded projects by more than half. Twenty percent time died. And suddenly there were more people than work."},
+        {"speaker": "Steve", "text": "That, right there, is the formula. During Golden Ages, there is more work than people. When they crash, there are more people than work. My colleague Jacob Gabrielson at Amazon nailed it. He said, everyone here is always slightly oversubscribed. That's why it never turned political. There was never a reason to fight."},
+        {"speaker": "Steve", "text": "At Anthropic, they are on the surface of an expanding sphere. Infinite work. Infinite opportunity. Everyone gets their shot. And the Hive Mind judges their merit."}
+      ]
+    },
+    {
+      "name": "05-the-small-version",
+      "dialogue": [
+        {"speaker": "Steve", "text": "Now, I want to tell you about three friends of mine. Ajit, Ryan, and Milkana. They're a little startup called SageOx, working out of an apartment in Kirkland, above a coffee shop bakery. Coding and sleeping for weeks on end. They don't even put their shoes on to get coffee."},
+        {"speaker": "Steve", "text": "They are doing the exact same thing as Anthropic, with three people. They turn the volume way up and announce everything at all times. Quote: I am going down to get a donut now. Get me a donut. I am also deleting the database. OK. End quote. Their entire work stream is public. Every conversation recorded, transcribed, versioned."},
+        {"speaker": "Steve", "text": "We had a big debate about whether developers would be comfortable with that. Working in fish bowls. Everyone seeing your mistakes, your wrong turns, exactly how fast you work. And the consensus was: most developers would hate it."},
+        {"speaker": "Steve", "text": "Because it's the death of the ego. Those were the exact words of someone at Anthropic since the early days. And here's the kicker: you have to build for yourself. The Settlers of Catan inventor spent years building games for his own family before finding the formula. Too many AI founders today are guessing what people want. That's the wrong side of the Bitter Lesson."}
+      ]
+    },
+    {
+      "name": "06-the-campfire-model",
+      "dialogue": [
+        {"speaker": "Steve", "text": "So how does the work actually happen? I call it the Campfire Model. And it came into focus for me at the Thoughtworks unconference in Deer Valley, Utah, with Martin Fowler, where we were debating Spec-Driven Development."},
+        {"speaker": "Steve", "text": "Most of us found spec-driven approaches completely unconvincing. What we preferred, what we actually do, is Exploratory Development. Evolutionary Development. Everyone sits around a campfire together, and builds."},
+        {"speaker": "Steve", "text": "The center of the campfire is a living prototype. There is no waterfall. There is no spec. There is a prototype that simply evolves, via group sculpting, into the final product. Something that finally feels right. You know it when you find it."},
+        {"speaker": "Steve", "text": "Anthropic does not produce an operating plan ahead more than ninety days. That is their outermost cycle. They are vibing on the shortest cycles and fastest feedback loops imaginable for their size. And the result, they tell me, is something like improv."}
+      ]
+    },
+    {
+      "name": "07-improv-at-scale",
+      "dialogue": [
+        {"speaker": "Steve", "text": "Yes, and. That's the whole system. Anthropic's Hive Mind is described by employees as Yes And style improvisational theater. Every idea is welcomed, examined, savored, and judged by the Hive Mind. No central decision-making authority. They are just trying everything, and when magic happens, they all just kind of realize it at once."},
+        {"speaker": "Steve", "text": "With this accretive model, they're sculpting together with clay. Campfires around in-flight products, swarming, changing shapes, trying variations and mashups. Claude Cowork shipped publicly ten days after the first idea. When magic happens there, it happens fast."},
+        {"speaker": "Steve", "text": "Their engineers are ten to a hundred X as productive as people using Cursor and chat today. Roughly a thousand X versus Googlers in two thousand five. They are a quivering mass implementing Multi-Armed Bandit on ideas at superhuman velocity."},
+        {"speaker": "Steve", "text": "But the hive mind will also eject anyone who's not acting like a happy worker bee. You need to contribute your ideas the right way. It's improv. It's a team sport. Come in guns blazing, make it about yourself, and you're out. We're seeing real power in the Yes And model. And yet, most companies arrived where they are by learning how to say No. That is shaping up to be a problem."}
+      ]
+    },
+    {
+      "name": "08-more-to-come",
+      "dialogue": [
+        {"speaker": "Steve", "text": "So let me leave you with this. Every company right now is asking the same two questions. Will everything be OK? And will we be here in five years? The default answer is No. If you do nothing, you're almost certainly going to get overrun."},
+        {"speaker": "Steve", "text": "If you have an Atom Moat, if you make beer, or work with humans, or ship physical stuff, you've got a bit more time. But if your product is purely software, just electrons, no atoms? You are, candidly, pretty screwed if you don't pivot. And there are no recipes for pivoting yet. This is all new."},
+        {"speaker": "Steve", "text": "But there is a yellow brick road. And it is paved with tokens. Spend them. Start learning. When coding is no longer the bottleneck, new bottlenecks emerge, and your organization needs to learn those lessons now, not later. You can tell how much practice your people are getting from their token spend."},
+        {"speaker": "Steve", "text": "So here is my call to action. Learn AI. Build the campfire. Turn your product into a living prototype. Build some hives within your company and give them space to innovate. Then pivot like hell to your new product-market fit. It's gonna be a crazy year. May the best whatever win. Now go. Start."}
+      ]
+    }
+  ]
+}
